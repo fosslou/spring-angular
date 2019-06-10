@@ -21,8 +21,8 @@ public class BootDemoApplication {
 
 	@PostConstruct
 	public void setupDbWithData(){
-		User user= new User("Ashish", null);
-		user.setSkills(Arrays.asList(new Skill("java"), new Skill("js")));
+		User user= new User("Lou Foss", null);
+		user.setSkills(Arrays.asList(new Skill("Architecture"), new Skill("s390x")));
 		user= userRepository.save(user);
 	}
 }
